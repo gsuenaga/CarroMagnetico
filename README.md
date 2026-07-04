@@ -12,3 +12,32 @@ It was created as an educational tool to teach robotics and kinematics concepts 
 
 The project is divided into three independent modules:
 
+- driver       Connects to the hardware / COM port and captures raw data  
+- cm-server    Processes the received data and exposes an API
+- cm-web       Web interface to visualize the processed data
+
+
+Features:
+- Real-time data reading via COM port
+- Data processing and transformation according to business rules
+- Web visualization of the results
+
+Installation and Usage
+Prerequisites
+- Java 8+ and Maven
+- Node.js and npm
+- Hardware-specific driver CH341SER.EXE (Windows)
+
+1. Clone the repository\
+   git clone https://github.com/gsuenaga/CarroMagnetico.git \
+   cd CarroMagnetico
+
+2. Start the server (cm-server)\
+   cd cm-server\
+   mvn clean install\
+   mvn spring-boot:run
+
+3. Start the web application (cm-web)\
+   cd cm-web\
+   npm install\
+   npm start
