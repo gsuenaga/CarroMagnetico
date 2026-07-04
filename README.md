@@ -1,28 +1,37 @@
-Objective:
+**Objective:** \
 Magnetic Cart is a system that receives real-time data from a serial port (COM), processes it according to defined rules, and displays it through a web application.
 
-What is the "cart" physically?
+**What is the "cart" physically?** \
 It is a mobile unit that moves along an aluminum profile. The mobile unit is suspended in the air using neodymium magnets, resulting in almost zero friction.
 
-What does it measure/send (sensors, position, speed)?
+**What does it measure/send (sensors, position, speed)?** \
 It features optical sensors that detect the passing of the cart, and a microcontroller-based system measures the times in milliseconds.
 
-What is the educational or practical objective of the project?
+**What is the educational or practical objective of the project?** \
 It was created as an educational tool to teach robotics and kinematics concepts in schools, allowing students to visualize in real time the data that a cart equipped with magnetic sensors sends to a computer.
 
-The project is divided into three independent modules:
+---
+
+
+**The project is divided into three independent modules:**
 
 - driver       Connects to the hardware / COM port and captures raw data  
 - cm-server    Processes the received data and exposes an API
 - cm-web       Web interface to visualize the processed data
 
+---
 
-Features:
+
+Features: 
 - Real-time data reading via COM port
 - Data processing and transformation according to business rules
 - Web visualization of the results
 
-Installation and Usage
+
+---
+
+
+**Installation and Usage** \
 Prerequisites
 - Java 8+ and Maven
 - Node.js and npm
@@ -41,3 +50,22 @@ Prerequisites
    cd cm-web\
    npm install\
    npm start
+
+
+---
+
+**Contributions are welcome. To propose changes:**
+
+1. Fork the project
+2. Create a branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
+
+
+
+---
+
+**Author**
+
+Gustavo Suenaga — @gsuenaga
